@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Derek Huit — Founder & CEO, Huit.AI | Built from Alaska</title>
+<meta name="description" content="Derek Huit is the Founder & CEO of Huit.AI, VP at Cardinal Financial, and a mortgage industry leader with 18+ years and $1B+ in career production. NMLS #203980. Built from Alaska.">
+<meta name="keywords" content="Derek Huit, Huit.AI, Alaska mortgage, NMLS 203980, Cardinal Financial, mortgage technology, fintech CEO">
+<meta property="og:title" content="Derek Huit — Founder & CEO, Huit.AI">
+<meta property="og:description" content="18+ years in mortgage. $1B+ production. 50-product AI ecosystem. Built from Alaska.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://derekhuit.ai">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Derek Huit — Founder & CEO, Huit.AI">
+<link rel="canonical" href="https://derekhuit.ai">
+
+<!-- Structured Data: Person Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Derek Huit",
+  "jobTitle": "Founder & CEO",
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Huit.AI, Inc.",
+      "url": "https://huit.ai"
+    },
+    {
+      "@type": "Organization",
+      "name": "Cardinal Financial",
+      "url": "https://cardinalfinancial.com"
+    }
+  ],
+  "description": "Mortgage industry leader with 18+ years of experience and $1B+ in career production. Founder of Huit.AI, a 50-product AI ecosystem spanning mortgage intelligence, real estate, fintech, and grants management.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Anchorage",
+    "addressRegion": "AK",
+    "addressCountry": "US"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Northwest Nazarene University"
+  },
+  "knowsAbout": ["Mortgage Lending", "Fintech", "AI", "Recruiting", "Real Estate Technology"],
+  "sameAs": [
+    "https://www.linkedin.com/in/derekhuit/",
+    "https://www.instagram.com/huit_usaloan/",
+    "https://www.facebook.com/derekhuit/",
+    "https://huit.ai",
+    "https://zenopay.ai",
+    "https://foundhergrants.com"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "NMLS",
+    "value": "203980"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --bg-card: #16161f;
+  --accent: #4f7df5;
+  --accent-glow: rgba(79, 125, 245, 0.15);
+  --gold: #c9a44a;
+  --text-primary: #e8e8ef;
+  --text-secondary: #8888a0;
+  --text-muted: #55556a;
+  --border: rgba(255,255,255,0.06);
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'DM Sans', -apple-system, sans-serif;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* GRAIN OVERLAY */
+body::before {
+  content: '';
+  position: fixed;
+  top:0; left:0; width:100%; height:100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 120px 0 80px;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px; right: -300px;
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-content { position: relative; z-index: 1; }
+.hero-eyebrow {
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, var(--text-primary) 0%, #9999b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-subtitle {
+  font-size: 20px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.stat-item { }
+.stat-number {
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+.btn-primary:hover { background: #3a6ae0; transform: translateY(-1px); }
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: transparent;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+/* SECTIONS */
+section { padding: 100px 0; }
+.section-label {
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+.section-desc {
+  color: var(--text-secondary);
+  font-size: 17px;
+  max-width: 640px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ROLES */
+.roles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 48px;
+}
+.role-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 36px;
+  transition: all 0.3s;
+}
+.role-card:hover { border-color: rgba(79,125,245,0.3); transform: translateY(-2px); }
+.role-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.role-company {
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.role-desc {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ECOSYSTEM */
+.eco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 48px;
+}
+.eco-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  display: block;
+}
+.eco-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.eco-card h4 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+.eco-card p { color: var(--text-secondary); font-size: 14px; line-height: 1.5; }
+.eco-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  background: rgba(79,125,245,0.1);
+  color: var(--accent);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* DIVIDER */
+.divider {
+  border: none;
+  height: 1px;
+  background: var(--border);
+}
+
+/* CONTACT */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+.contact-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.3s;
+}
+.contact-item:hover { border-color: var(--accent); }
+.contact-item .label { color: var(--text-muted); font-size: 12px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+.contact-item .value { font-size: 16px; font-weight: 600; color: var(--text-primary); }
+
+/* FOOTER */
+footer {
+  padding: 60px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+footer p { color: var(--text-muted); font-size: 13px; line-height: 1.8; }
+footer a { color: var(--text-secondary); text-decoration: none; }
+footer a:hover { color: var(--accent); }
+
+/* NMLS */
+.nmls-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(201,164,74,0.08);
+  border: 1px solid rgba(201,164,74,0.2);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 24px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero { padding: 80px 0 60px; }
+  .hero-stats { gap: 32px; }
+  .roles-grid { grid-template-columns: 1fr; }
+  .hero-ctas { flex-direction: column; }
+  .btn-primary, .btn-secondary { text-align: center; justify-content: center; }
+  section { padding: 60px 0; }
+}
+@media (max-width: 420px) {
+  .hero h1 { font-size: 2.4rem; }
+  .stat-number { font-size: 26px; }
+  .hero-stats { gap: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+  <p class="hero-eyebrow">Built from Alaska</p>
+  <h1>Derek Huit</h1>
+  <p class="hero-subtitle">Founder & CEO of Huit.AI. VP Retail Market Leader at Cardinal Financial. 18+ years originating mortgage loans across America. Building the future of mortgage intelligence with AI.</p>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-number">$1B+</span>
+      <span class="stat-label">Career Production</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">18+</span>
+      <span class="stat-label">Years in Mortgage</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">50</span>
+      <span class="stat-label">AI Products Built</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">12K+</span>
+      <span class="stat-label">LinkedIn Followers</span>
+    </div>
+  </div>
+
+  <div class="hero-ctas">
+    <a href="https://www.linkedin.com/in/derekhuit/" class="btn-primary" target="_blank" rel="noopener">Connect on LinkedIn →</a>
+    <a href="tel:9072449368" class="btn-secondary">📞 (907) 244-9368</a>
+  </div>
+
+  <div class="nmls-badge">🏛 NMLS #203980 &nbsp;|&nbsp; Licensed Mortgage Originator</div>
+</div>
+</div>
+</section>
+
+<hr class="divider">
+
+<!-- CURRENT ROLES -->
+<section>
+<div class="container">
+  <p class="section-label">Current Roles</p>
+  <h2 class="section-title">Where I Operate</h2>
+  <p class="section-desc">Leading at the intersection of mortgage lending and artificial intelligence — building technology that transforms how loans are originated, recruits are found, and borrowers are served.</p>
+
+  <div class="roles-grid">
+    <div class="role-card">
+      <h3>Founder & CEO</h3>
+      <p class="role-company">Huit.AI, Inc.</p>
+      <p class="role-desc">A 50-product AI ecosystem spanning mortgage intelligence, real estate analytics, fintech infrastructure, and grants management. APEX recruiting engine, CRMEX intelligence platform, HyperLoan AI, FoundHer Grants, ZenoPay, and more. All IP solely owned.</p>
+    </div>
+    <div class="role-card">
+      <h3>VP Retail Market Leader</h3>
+      <p class="role-company">Cardinal Financial</p>
+      <p class="role-desc">Nationwide mortgage origination and team leadership. Specializing in Conventional, FHA, VA, USDA, Jumbo, and Renovation loans. Recruiting top-tier loan officers and branch managers across the country.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<hr class="divider">
+
+<!-- ECOSYSTEM -->
+<section>
+<div class="container">
+  <p class="section-label">The Ecosystem</p>
+  <h2 class="section-title">Huit.AI Products</h2>
+  <p class="section-desc">50 deployed products powered by proprietary data, patent-pending algorithms, and 7 years of HMDA data. Every product is designed to give mortgage professionals an unfair advantage.</p>
+
+  <div class="eco-grid">
+    <a href="https://crmex.huit.ai" class="eco-card" target="_blank">
+      <span class="eco-tag">Core Platform</span>
+      <h4>CRMEX</h4>
+      <p>AI-powered CRM intelligence platform for mortgage origination, pipeline management, and competitive analysis.</p>
+    </a>
+    <a href="https://apex-website-huitai.vercel.app" class="eco-card" target="_blank">
+      <span class="eco-tag">Recruiting</span>
+      <h4>APEX Intelligence</h4>
+      <p>Patent-pending recruiting engine with TLS, STDA, and SCF scoring algorithms. Powered by HMDA data.</p>
+    </a>
+    <a href="https://zenopay.ai" class="eco-card" target="_blank">
+      <span class="eco-tag">Fintech</span>
+      <h4>ZenoPay.ai</h4>
+      <p>Zero per-transaction billing infrastructure. The exclusive payment processor for the entire Huit.AI ecosystem.</p>
+    </a>
+    <a href="https://foundhergrants.com" class="eco-card" target="_blank">
+      <span class="eco-tag">Grants</span>
+      <h4>FoundHer Grants</h4>
+      <p>3,255+ grant database helping women founders access non-dilutive funding. Growing community of entrepreneurs.</p>
+    </a>
+    <a href="https://askalaskamortgage.ai" class="eco-card" target="_blank">
+      <span class="eco-tag">GEO / AI</span>
+      <h4>AskAlaskaMortgage.ai</h4>
+      <p>AI-powered mortgage advisor for Alaska homebuyers. Claude-powered conversations with real lending expertise.</p>
+    </a>
+    <a href="https://nerve.huit.ai" class="eco-card" target="_blank">
+      <span class="eco-tag">Intelligence</span>
+      <h4>Nerve Center</h4>
+      <p>Central command hub for the Huit.AI ecosystem. HMDA data visualization, market intelligence, and system monitoring.</p>
+    </a>
+  </div>
+</div>
+</section>
+
+<hr class="divider">
+
+<!-- BACKGROUND -->
+<section>
+<div class="container">
+  <p class="section-label">Background</p>
+  <h2 class="section-title">The Story</h2>
+  <p class="section-desc" style="max-width:720px;">Born in Grants Pass, Oregon. Based in Anchorage, Alaska. I've spent nearly two decades in mortgage lending — originating over $1 billion in loans, managing branches, recruiting loan officers, and building teams from Alaska to Florida.</p>
+  <br>
+  <p class="section-desc" style="max-width:720px;">In 2023, I started building what became Huit.AI — a full ecosystem of AI-powered tools designed to solve the problems I've lived with for 18 years. No one was building the technology mortgage professionals actually needed, so I built it myself. From a single HMDA data pipeline to 50 deployed products, every tool in the Huit.AI ecosystem comes from real-world lending experience, not a Silicon Valley pitch deck.</p>
+  <br>
+  <p class="section-desc" style="max-width:720px;">I hold an active NMLS mortgage license (#203980), a Business Administration degree from Northwest Nazarene University, and I operate an Airbnb property in Anchorage where I hold Superhost status. Beyond mortgage and tech, I'm researching and writing a nonfiction book about the Mona Lisa's chain of custody.</p>
+</div>
+</section>
+
+<hr class="divider">
+
+<!-- CONTACT -->
+<section>
+<div class="container">
+  <p class="section-label">Get in Touch</p>
+  <h2 class="section-title">Let's Connect</h2>
+  <p class="section-desc">Whether you're a borrower, a loan officer exploring opportunities, a real estate partner, or an investor — I'd love to hear from you.</p>
+
+  <div class="contact-grid">
+    <a href="tel:9072449368" class="contact-item">
+      <div class="label">Phone</div>
+      <div class="value">(907) 244-9368</div>
+    </a>
+    <a href="/cdn-cgi/l/email-protection#27434255424c4f524e5367404a464e4b0944484a" class="contact-item">
+      <div class="label">Email</div>
+      <div class="value"><span class="__cf_email__" data-cfemail="30545542555b5845594470575d51595c1e535f5d">[email&#160;protected]</span></div>
+    </a>
+    <a href="https://www.linkedin.com/in/derekhuit/" class="contact-item" target="_blank" rel="noopener">
+      <div class="label">LinkedIn</div>
+      <div class="value">linkedin.com/in/derekhuit</div>
+    </a>
+    <a href="https://huit.ai" class="contact-item" target="_blank">
+      <div class="label">Company</div>
+      <div class="value">huit.ai</div>
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+  <p>
+    © 2026 Derek Huit. All rights reserved. NMLS #203980.<br>
+    <a href="https://huit.ai">Huit.AI</a> · <a href="https://zenopay.ai">ZenoPay</a> · <a href="https://foundhergrants.com">FoundHer Grants</a> · <a h
